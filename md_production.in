@@ -1,0 +1,22 @@
+Production MD
+&cntrl
+imin=0,         ! 不进行最小化
+irest=1,        ! 继续之前的模拟
+ntx=5,          ! 读取初始结构
+ntt=3,          ! 温度耦合
+temp0=300.0,    ! 目标温度
+tautp=1.0,      ! 温度耦合时间常数
+ntp=1,          ! 压力耦合
+barostat=2,     ! 使用Berendsen压力耦合
+gamma_ln=2.0,   ! Langevin 碰撞频率 (单位 ps-1)
+pres0=1.0,      ! 目标压力
+nstlim=5000000, ! 总的时间步数 (10 ns / 0.002 ps = 5000000)
+dt=0.002,       ! 时间步长 (2 fs)
+ntb=2,          ! NPT模拟
+cut=8.0,        ! 截断距离
+ntc=2,          ! 约束
+ntf=2,          ! 约束
+ntr=0,          ! 不使用约束
+ntwr=100000,      ! 每隔 0.2 ns 保存一次结果 
+ntwx=100000,      ! 每隔 0.2 ns 保存轨迹 
+/
